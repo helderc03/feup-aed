@@ -1,0 +1,411 @@
+\hypertarget{classCurso}{}\doxysection{Curso Class Reference}
+\label{classCurso}\index{Curso@{Curso}}
+
+
+{\ttfamily \#include $<$Curso.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCurso_a10294de5e86da7cad07c919cb56b4722}{Curso}} ()=default
+\item 
+\mbox{\hyperlink{classCurso_a3d51a18fb86b65d6e5222ea52dc6b1cd}{Curso}} (std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$, std\+::set$<$ \mbox{\hyperlink{classTurma}{Turma}} $\ast$, \mbox{\hyperlink{structturmaComparator}{turma\+Comparator}} $>$, std\+::vector$<$ \mbox{\hyperlink{classSlot}{Slot}} $\ast$ $>$ all\+Slots)
+\item 
+std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$ \mbox{\hyperlink{classCurso_a88d9520ce8222ce33c498f42e232596b}{get\+All\+Students}} () const
+\item 
+std\+::set$<$ \mbox{\hyperlink{classTurma}{Turma}} $\ast$, \mbox{\hyperlink{structturmaComparator}{turma\+Comparator}} $>$ \mbox{\hyperlink{classCurso_a3609274363c661fce515bc526cad8e79}{get\+All\+Turmas}} () const
+\item 
+void \mbox{\hyperlink{classCurso_a01732c2ef088eb7725c11e6215b5e4be}{Print\+Students}} (std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$ students, char option)
+\item 
+void \mbox{\hyperlink{classCurso_a873a25c3d5f5e26d0f715aa8a6077068}{Print\+Horario\+Turma}} (std\+::vector$<$ \mbox{\hyperlink{classTurma}{Turma}} $\ast$ $>$, std\+::string uc=\char`\"{}\char`\"{})
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classTurma}{Turma}} $\ast$ $>$ \mbox{\hyperlink{classCurso_a2427fb2ec917ee5aad431ce88050a950}{Find\+Turma}} (std\+::string \mbox{\hyperlink{Menu_8h_aeca1e798d0c9c2e9fe4f661ca32a9015}{uc\+Code}}=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{classStudent}{Student}} $\ast$ \mbox{\hyperlink{classCurso_a107b003f825f99d60a04d0b90434013a}{Print\+Student\+By\+Name}} ()
+\item 
+\mbox{\hyperlink{classStudent}{Student}} $\ast$ \mbox{\hyperlink{classCurso_a1793ee3cd699418d5d085456db79f23e}{Print\+Student\+By\+Code}} ()
+\item 
+std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$ \mbox{\hyperlink{classCurso_ab98b119870d60687065562a8ad0288d5}{get\+Students\+Turma}} (std\+::vector$<$ \mbox{\hyperlink{classTurma}{Turma}} $\ast$ $>$ turmas, std\+::string \mbox{\hyperlink{Menu_8h_aeca1e798d0c9c2e9fe4f661ca32a9015}{uc\+Code}}=\char`\"{}\char`\"{})
+\item 
+void \mbox{\hyperlink{classCurso_a55acaaf176f4537421f05f36a993b828}{Sortby\+Turma\+Capacity}} (std\+::string \mbox{\hyperlink{Menu_8h_aeca1e798d0c9c2e9fe4f661ca32a9015}{uc\+Code}}, int option)
+\item 
+std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$ \mbox{\hyperlink{classCurso_a0ab656fdf0a499770fb755606f01147f}{get\+Students\+Year}} (std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$ students, int year)
+\item 
+void \mbox{\hyperlink{classCurso_a6480cfecad24ad3c546f6b4b82d88f55}{get\+Turmas\+Year}} (int year=INT\+\_\+\+MAX)
+\item 
+void \mbox{\hyperlink{classCurso_abf8f65e644cf53de270ba60d3d0e4685}{Sort\+By\+Enrolled\+UC}} (int op=1, std\+::string \mbox{\hyperlink{Menu_8h_aeca1e798d0c9c2e9fe4f661ca32a9015}{uc\+Code}}=\char`\"{}\char`\"{})
+\item 
+std\+::string \mbox{\hyperlink{classCurso_a06f6a22e42198bca5bba78cf7b0c6f3d}{uc\+Code\+Normalizer}} ()
+\item 
+void \mbox{\hyperlink{classCurso_a832ddc1d7788b743a6f8b06e374479db}{Add\+PA}} (\mbox{\hyperlink{classStudent}{Student}} $\ast$s, \mbox{\hyperlink{classTurma}{Turma}} $\ast$t, int type\+Request)
+\item 
+\mbox{\hyperlink{classTurma}{Turma}} $\ast$ \mbox{\hyperlink{classCurso_a01f0584ea010e29b7e3e8afa2b745f9d}{Find\+Turma\+Lowest\+Capacity}} (\mbox{\hyperlink{classStudent}{Student}} $\ast$s, std\+::string \mbox{\hyperlink{Menu_8h_aeca1e798d0c9c2e9fe4f661ca32a9015}{uc\+Code}})
+\item 
+\mbox{\hyperlink{classTurma}{Turma}} $\ast$ \mbox{\hyperlink{classCurso_ada6a40b2a5bc07a6cdf3d5aee5c9aa02}{Get\+Turma}} (\mbox{\hyperlink{classStudent}{Student}} $\ast$s, std\+::string \mbox{\hyperlink{Menu_8h_aeca1e798d0c9c2e9fe4f661ca32a9015}{uc\+Code}})
+\item 
+void \mbox{\hyperlink{classCurso_a261d2a40a9047362766756dc227e6a55}{set\+Default\+Cap}} (int new\+Cap)
+\item 
+int \mbox{\hyperlink{classCurso_ab08687acf24caa10644f39c8ec0f9340}{get\+Default\+Cap}} ()
+\item 
+void \mbox{\hyperlink{classCurso_af70a1dfd1e0b47ca363cbf49df45dd71}{Process\+PA}} ()
+\item 
+void \mbox{\hyperlink{classCurso_acb28836ef923b1566be8737de979191f}{Save}} ()
+\item 
+void \mbox{\hyperlink{classCurso_a88bc3b39d66aef11618b5da39c7fd0c3}{Write\+Archive}} (\mbox{\hyperlink{classPedidoAlteracao}{Pedido\+Alteracao}} $\ast$p)
+\item 
+int \mbox{\hyperlink{classCurso_ac480b8e882228daebf3a5c43bfd34f98}{get\+Turma\+Most\+Students}} ()
+\item 
+void \mbox{\hyperlink{classCurso_aea7a1135bb4f9c351b0aa5a202ee11a5}{find\+List\+Students\+UC}} (int n, int exactN, int order\+Type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator2}{student\+Comparator2}} $>$ \mbox{\hyperlink{classCurso_a09965c2c760e5b548a57be07f326393f}{Student\+Reverse\+Sort\+Alpha}} (std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$ students, std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator2}{student\+Comparator2}} $>$ \&newstudents)
+\item 
+static std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparatorCode}{student\+Comparator\+Code}} $>$ \mbox{\hyperlink{classCurso_a046d3e3bcc8aa63c257f9173a6ca8883}{Student\+Sort\+Code}} (std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$ students, std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparatorCode}{student\+Comparator\+Code}} $>$ \&newstudents)
+\item 
+static std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparatorDecreasingCode}{student\+Comparator\+Decreasing\+Code}} $>$ \mbox{\hyperlink{classCurso_abfb2eb2d35b9d9265b995456858fb461}{Student\+Reverse\+Sort\+Code}} (std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$ students, std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparatorDecreasingCode}{student\+Comparator\+Decreasing\+Code}} $>$ \&newstudents)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCurso_a10294de5e86da7cad07c919cb56b4722}\label{classCurso_a10294de5e86da7cad07c919cb56b4722}} 
+\index{Curso@{Curso}!Curso@{Curso}}
+\index{Curso@{Curso}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{Curso()}{Curso()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Curso\+::\+Curso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Default constructor for class \mbox{\hyperlink{classCurso}{Curso}}. Complexity\+: O(1) \mbox{\Hypertarget{classCurso_a3d51a18fb86b65d6e5222ea52dc6b1cd}\label{classCurso_a3d51a18fb86b65d6e5222ea52dc6b1cd}} 
+\index{Curso@{Curso}!Curso@{Curso}}
+\index{Curso@{Curso}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{Curso()}{Curso()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Curso\+::\+Curso (\begin{DoxyParamCaption}\item[{std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$}]{all\+Students,  }\item[{std\+::set$<$ \mbox{\hyperlink{classTurma}{Turma}} $\ast$, \mbox{\hyperlink{structturmaComparator}{turma\+Comparator}} $>$}]{all\+Turmas,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSlot}{Slot}} $\ast$ $>$}]{all\+Slots }\end{DoxyParamCaption})}
+
+Constructor for class \mbox{\hyperlink{classCurso}{Curso}}. Complexity\+: O(1) 
+\begin{DoxyParams}{Parameters}
+{\em all\+Slots} & All lesson slots \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCurso_a832ddc1d7788b743a6f8b06e374479db}\label{classCurso_a832ddc1d7788b743a6f8b06e374479db}} 
+\index{Curso@{Curso}!AddPA@{AddPA}}
+\index{AddPA@{AddPA}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{AddPA()}{AddPA()}}
+{\footnotesize\ttfamily void Curso\+::\+Add\+PA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStudent}{Student}} $\ast$}]{s,  }\item[{\mbox{\hyperlink{classTurma}{Turma}} $\ast$}]{t,  }\item[{int}]{type\+Request }\end{DoxyParamCaption})}
+
+The Add\+PA function add a request change to the request change queue. Complexity\+: O(n² log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{classStudent}{Student}} involved in the change \\
+\hline
+{\em t} & Class that the student will be changed to / class where he is now \\
+\hline
+{\em type\+Request} & The type of request \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCurso_aea7a1135bb4f9c351b0aa5a202ee11a5}\label{classCurso_aea7a1135bb4f9c351b0aa5a202ee11a5}} 
+\index{Curso@{Curso}!findListStudentsUC@{findListStudentsUC}}
+\index{findListStudentsUC@{findListStudentsUC}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{findListStudentsUC()}{findListStudentsUC()}}
+{\footnotesize\ttfamily void Curso\+::find\+List\+Students\+UC (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{exactN,  }\item[{int}]{order\+Type }\end{DoxyParamCaption})}
+
+The find\+List\+Students\+UC function finds and prints all students enrolled in more than/exactly/less than n UCs. Complexity\+: O(n log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em n} & The number of UCs chosen by the user \\
+\hline
+{\em exactN} & The user\textquotesingle{}s choice ( more than / exactly / less than ) \\
+\hline
+{\em order\+Type} & The type of sorting to use in the print \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCurso_a2427fb2ec917ee5aad431ce88050a950}\label{classCurso_a2427fb2ec917ee5aad431ce88050a950}} 
+\index{Curso@{Curso}!FindTurma@{FindTurma}}
+\index{FindTurma@{FindTurma}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{FindTurma()}{FindTurma()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classTurma}{Turma}} $\ast$ $>$ Curso\+::\+Find\+Turma (\begin{DoxyParamCaption}\item[{std\+::string}]{uc\+Code = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+The Find\+Turma is a function that allows user to find a specific class. 
+\begin{DoxyParams}{Parameters}
+{\em uc\+Code} & UC that the class belongs to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The class requested by the user 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCurso_a01f0584ea010e29b7e3e8afa2b745f9d}\label{classCurso_a01f0584ea010e29b7e3e8afa2b745f9d}} 
+\index{Curso@{Curso}!FindTurmaLowestCapacity@{FindTurmaLowestCapacity}}
+\index{FindTurmaLowestCapacity@{FindTurmaLowestCapacity}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{FindTurmaLowestCapacity()}{FindTurmaLowestCapacity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTurma}{Turma}} $\ast$ Curso\+::\+Find\+Turma\+Lowest\+Capacity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStudent}{Student}} $\ast$}]{s,  }\item[{std\+::string}]{uc\+Code }\end{DoxyParamCaption})}
+
+The Find\+Turma\+Lowest\+Capacity function returns the class with the most remaining vacancies that is compatible with a student\textquotesingle{}s schedule. Complexity\+: O(n² log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{classStudent}{Student}} \\
+\hline
+{\em uc\+Code} & UC code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The class with the most vacancies that is compatible with the student\textquotesingle{}s schedule 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCurso_a88d9520ce8222ce33c498f42e232596b}\label{classCurso_a88d9520ce8222ce33c498f42e232596b}} 
+\index{Curso@{Curso}!getAllStudents@{getAllStudents}}
+\index{getAllStudents@{getAllStudents}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{getAllStudents()}{getAllStudents()}}
+{\footnotesize\ttfamily std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$ Curso\+::get\+All\+Students (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+The get\+All\+Students function is a getter for all students in a sorted way. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+All students sorted 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCurso_a3609274363c661fce515bc526cad8e79}\label{classCurso_a3609274363c661fce515bc526cad8e79}} 
+\index{Curso@{Curso}!getAllTurmas@{getAllTurmas}}
+\index{getAllTurmas@{getAllTurmas}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{getAllTurmas()}{getAllTurmas()}}
+{\footnotesize\ttfamily std\+::set$<$ \mbox{\hyperlink{classTurma}{Turma}} $\ast$, \mbox{\hyperlink{structturmaComparator}{turma\+Comparator}} $>$ Curso\+::get\+All\+Turmas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+The get\+All\+Turmas function is a getter for all classes in a sorted way. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+All classes in a sorted way 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCurso_ab08687acf24caa10644f39c8ec0f9340}\label{classCurso_ab08687acf24caa10644f39c8ec0f9340}} 
+\index{Curso@{Curso}!getDefaultCap@{getDefaultCap}}
+\index{getDefaultCap@{getDefaultCap}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{getDefaultCap()}{getDefaultCap()}}
+{\footnotesize\ttfamily int Curso\+::get\+Default\+Cap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The get\+Default\+Cap function is a getter for the current class size cap. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCurso_ab98b119870d60687065562a8ad0288d5}\label{classCurso_ab98b119870d60687065562a8ad0288d5}} 
+\index{Curso@{Curso}!getStudentsTurma@{getStudentsTurma}}
+\index{getStudentsTurma@{getStudentsTurma}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{getStudentsTurma()}{getStudentsTurma()}}
+{\footnotesize\ttfamily std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$ Curso\+::get\+Students\+Turma (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classTurma}{Turma}} $\ast$ $>$}]{turmas,  }\item[{std\+::string}]{uc\+Code = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+The get\+Students\+Turma function returns all students in a certain class. Complexity\+: O(n² log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em turmas} & The class the user wants to see the students from \\
+\hline
+{\em uc\+Code} & In case the user wants, students only a specific UC/\+Class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The students requested by the user 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCurso_a0ab656fdf0a499770fb755606f01147f}\label{classCurso_a0ab656fdf0a499770fb755606f01147f}} 
+\index{Curso@{Curso}!getStudentsYear@{getStudentsYear}}
+\index{getStudentsYear@{getStudentsYear}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{getStudentsYear()}{getStudentsYear()}}
+{\footnotesize\ttfamily std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$ Curso\+::get\+Students\+Year (\begin{DoxyParamCaption}\item[{std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$}]{students,  }\item[{int}]{year }\end{DoxyParamCaption})}
+
+The get\+Students\+Years function returns all students enrolled in a certain year. Complexity\+: O(n² log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em students} & The set of all students \\
+\hline
+{\em year} & The year chosen by the user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+All students in a certain year 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCurso_ada6a40b2a5bc07a6cdf3d5aee5c9aa02}\label{classCurso_ada6a40b2a5bc07a6cdf3d5aee5c9aa02}} 
+\index{Curso@{Curso}!GetTurma@{GetTurma}}
+\index{GetTurma@{GetTurma}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{GetTurma()}{GetTurma()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTurma}{Turma}} $\ast$ Curso\+::\+Get\+Turma (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStudent}{Student}} $\ast$}]{s,  }\item[{std\+::string}]{uc\+Code }\end{DoxyParamCaption})}
+
+The Get\+Turma function returns the student\textquotesingle{}s class for that UC. Complexity\+: O(n) 
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{classStudent}{Student}} \\
+\hline
+{\em uc\+Code} & UC Code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Class in which the student is enrolled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCurso_ac480b8e882228daebf3a5c43bfd34f98}\label{classCurso_ac480b8e882228daebf3a5c43bfd34f98}} 
+\index{Curso@{Curso}!getTurmaMostStudents@{getTurmaMostStudents}}
+\index{getTurmaMostStudents@{getTurmaMostStudents}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{getTurmaMostStudents()}{getTurmaMostStudents()}}
+{\footnotesize\ttfamily int Curso\+::get\+Turma\+Most\+Students (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The get\+Turma\+Most\+Students return the number of students in the class with the most students. Complexity\+: O(n) \begin{DoxyReturn}{Returns}
+The number os students in the biggest class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCurso_a6480cfecad24ad3c546f6b4b82d88f55}\label{classCurso_a6480cfecad24ad3c546f6b4b82d88f55}} 
+\index{Curso@{Curso}!getTurmasYear@{getTurmasYear}}
+\index{getTurmasYear@{getTurmasYear}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{getTurmasYear()}{getTurmasYear()}}
+{\footnotesize\ttfamily void Curso\+::get\+Turmas\+Year (\begin{DoxyParamCaption}\item[{int}]{year = {\ttfamily INT\+\_\+MAX} }\end{DoxyParamCaption})}
+
+The get\+Turmas\+Year function returns all classes in a certain year/ in all years. Complexity\+: O(n² log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em year} & The year chosen by the user \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCurso_a873a25c3d5f5e26d0f715aa8a6077068}\label{classCurso_a873a25c3d5f5e26d0f715aa8a6077068}} 
+\index{Curso@{Curso}!PrintHorarioTurma@{PrintHorarioTurma}}
+\index{PrintHorarioTurma@{PrintHorarioTurma}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{PrintHorarioTurma()}{PrintHorarioTurma()}}
+{\footnotesize\ttfamily void Curso\+::\+Print\+Horario\+Turma (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classTurma}{Turma}} $\ast$ $>$}]{vt,  }\item[{std\+::string}]{uc = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+The Print\+Horario\+Turma is a function that prints a class schedule. Complexity\+: O(n²) 
+\begin{DoxyParams}{Parameters}
+{\em uc} & Uc chosen is users requests the schedule for a specific UC \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCurso_a1793ee3cd699418d5d085456db79f23e}\label{classCurso_a1793ee3cd699418d5d085456db79f23e}} 
+\index{Curso@{Curso}!PrintStudentByCode@{PrintStudentByCode}}
+\index{PrintStudentByCode@{PrintStudentByCode}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{PrintStudentByCode()}{PrintStudentByCode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStudent}{Student}} $\ast$ Curso\+::\+Print\+Student\+By\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The Print\+Student\+By\+Code function finds a student by his student code and prints it. Complexity\+: O(n² log(n)) \begin{DoxyReturn}{Returns}
+The student requested by the user 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCurso_a107b003f825f99d60a04d0b90434013a}\label{classCurso_a107b003f825f99d60a04d0b90434013a}} 
+\index{Curso@{Curso}!PrintStudentByName@{PrintStudentByName}}
+\index{PrintStudentByName@{PrintStudentByName}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{PrintStudentByName()}{PrintStudentByName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStudent}{Student}} $\ast$ Curso\+::\+Print\+Student\+By\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The Print\+Student\+By\+Name function finds a student by his name and prints it. Complexity\+: O(n² log(n)) \begin{DoxyReturn}{Returns}
+The student requested by the user 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCurso_a01732c2ef088eb7725c11e6215b5e4be}\label{classCurso_a01732c2ef088eb7725c11e6215b5e4be}} 
+\index{Curso@{Curso}!PrintStudents@{PrintStudents}}
+\index{PrintStudents@{PrintStudents}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{PrintStudents()}{PrintStudents()}}
+{\footnotesize\ttfamily void Curso\+::\+Print\+Students (\begin{DoxyParamCaption}\item[{std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$}]{students,  }\item[{char}]{option }\end{DoxyParamCaption})}
+
+The Print\+Students fuction print students using a user\textquotesingle{}s choice sorting. Complexity\+: O(n) 
+\begin{DoxyParams}{Parameters}
+{\em students} & The students to be printed \\
+\hline
+{\em option} & Type of sorting chosen \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCurso_af70a1dfd1e0b47ca363cbf49df45dd71}\label{classCurso_af70a1dfd1e0b47ca363cbf49df45dd71}} 
+\index{Curso@{Curso}!ProcessPA@{ProcessPA}}
+\index{ProcessPA@{ProcessPA}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{ProcessPA()}{ProcessPA()}}
+{\footnotesize\ttfamily void Curso\+::\+Process\+PA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The Process\+PA function processes all change requests made by the user. Complexity\+: O(n³ log(n)) \mbox{\Hypertarget{classCurso_acb28836ef923b1566be8737de979191f}\label{classCurso_acb28836ef923b1566be8737de979191f}} 
+\index{Curso@{Curso}!Save@{Save}}
+\index{Save@{Save}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily void Curso\+::\+Save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The Save function saves all the changes made, must be user called. Complexity\+: O(n²) \mbox{\Hypertarget{classCurso_a261d2a40a9047362766756dc227e6a55}\label{classCurso_a261d2a40a9047362766756dc227e6a55}} 
+\index{Curso@{Curso}!setDefaultCap@{setDefaultCap}}
+\index{setDefaultCap@{setDefaultCap}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{setDefaultCap()}{setDefaultCap()}}
+{\footnotesize\ttfamily void Curso\+::set\+Default\+Cap (\begin{DoxyParamCaption}\item[{int}]{new\+Cap }\end{DoxyParamCaption})}
+
+The set\+Default\+Cap function allows modifying of the class size cap. Complexity\+: O(n) 
+\begin{DoxyParams}{Parameters}
+{\em new\+Cap} & The new cap to be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCurso_abf8f65e644cf53de270ba60d3d0e4685}\label{classCurso_abf8f65e644cf53de270ba60d3d0e4685}} 
+\index{Curso@{Curso}!SortByEnrolledUC@{SortByEnrolledUC}}
+\index{SortByEnrolledUC@{SortByEnrolledUC}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{SortByEnrolledUC()}{SortByEnrolledUC()}}
+{\footnotesize\ttfamily void Curso\+::\+Sort\+By\+Enrolled\+UC (\begin{DoxyParamCaption}\item[{int}]{op = {\ttfamily 1},  }\item[{std\+::string}]{uc\+Code = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+The Sort\+By\+Enrolled\+UC function allows sorting by the number of students enrolled in the UC. Complexity\+: O(n² log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em op} & Controlled for user\textquotesingle{}s choices \\
+\hline
+{\em uc\+Code} & The UC chosen by the user \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCurso_a55acaaf176f4537421f05f36a993b828}\label{classCurso_a55acaaf176f4537421f05f36a993b828}} 
+\index{Curso@{Curso}!SortbyTurmaCapacity@{SortbyTurmaCapacity}}
+\index{SortbyTurmaCapacity@{SortbyTurmaCapacity}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{SortbyTurmaCapacity()}{SortbyTurmaCapacity()}}
+{\footnotesize\ttfamily void Curso\+::\+Sortby\+Turma\+Capacity (\begin{DoxyParamCaption}\item[{std\+::string}]{uc\+Code,  }\item[{int}]{option }\end{DoxyParamCaption})}
+
+The Sortby\+Turma\+Capacity function allows sorting of classes in a certain Uc by user choice. Complexity\+: O(n log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em uc\+Code} & classes\textquotesingle{} UC \\
+\hline
+{\em option} & Sorting option \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCurso_a09965c2c760e5b548a57be07f326393f}\label{classCurso_a09965c2c760e5b548a57be07f326393f}} 
+\index{Curso@{Curso}!StudentReverseSortAlpha@{StudentReverseSortAlpha}}
+\index{StudentReverseSortAlpha@{StudentReverseSortAlpha}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{StudentReverseSortAlpha()}{StudentReverseSortAlpha()}}
+{\footnotesize\ttfamily std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator2}{student\+Comparator2}} $>$ Curso\+::\+Student\+Reverse\+Sort\+Alpha (\begin{DoxyParamCaption}\item[{std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$}]{students,  }\item[{std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator2}{student\+Comparator2}} $>$ \&}]{newstudents }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Function that allows sorting of students in descending alphabetical order. Complexity\+: O(n log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em students} & Students to be sorted \\
+\hline
+{\em newstudents} & Sorted students \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sorted students 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCurso_abfb2eb2d35b9d9265b995456858fb461}\label{classCurso_abfb2eb2d35b9d9265b995456858fb461}} 
+\index{Curso@{Curso}!StudentReverseSortCode@{StudentReverseSortCode}}
+\index{StudentReverseSortCode@{StudentReverseSortCode}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{StudentReverseSortCode()}{StudentReverseSortCode()}}
+{\footnotesize\ttfamily std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparatorDecreasingCode}{student\+Comparator\+Decreasing\+Code}} $>$ Curso\+::\+Student\+Reverse\+Sort\+Code (\begin{DoxyParamCaption}\item[{std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$}]{students,  }\item[{std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparatorDecreasingCode}{student\+Comparator\+Decreasing\+Code}} $>$ \&}]{newstudents }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Function that allows sorting of students by their student code in descending order. Complexity\+: O(n log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em students} & Students to be sorted \\
+\hline
+{\em newstudents} & Sorted students \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sorted students 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCurso_a046d3e3bcc8aa63c257f9173a6ca8883}\label{classCurso_a046d3e3bcc8aa63c257f9173a6ca8883}} 
+\index{Curso@{Curso}!StudentSortCode@{StudentSortCode}}
+\index{StudentSortCode@{StudentSortCode}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{StudentSortCode()}{StudentSortCode()}}
+{\footnotesize\ttfamily std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparatorCode}{student\+Comparator\+Code}} $>$ Curso\+::\+Student\+Sort\+Code (\begin{DoxyParamCaption}\item[{std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$}]{students,  }\item[{std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparatorCode}{student\+Comparator\+Code}} $>$ \&}]{newstudents }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Function that allows sorting of students by their student code in ascending order. Complexity\+: O(n log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em students} & Students to be sorted \\
+\hline
+{\em newstudents} & Sorted students \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sorted students 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCurso_a06f6a22e42198bca5bba78cf7b0c6f3d}\label{classCurso_a06f6a22e42198bca5bba78cf7b0c6f3d}} 
+\index{Curso@{Curso}!ucCodeNormalizer@{ucCodeNormalizer}}
+\index{ucCodeNormalizer@{ucCodeNormalizer}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{ucCodeNormalizer()}{ucCodeNormalizer()}}
+{\footnotesize\ttfamily std\+::string Curso\+::uc\+Code\+Normalizer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The uc\+Code\+Normalizer function facilitates the user input for Uc\+Codes, automatically making the input in the form given by the files. Complexity\+: O(n² log(n)) \begin{DoxyReturn}{Returns}
+A normalized Uc\+Code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCurso_a88bc3b39d66aef11618b5da39c7fd0c3}\label{classCurso_a88bc3b39d66aef11618b5da39c7fd0c3}} 
+\index{Curso@{Curso}!WriteArchive@{WriteArchive}}
+\index{WriteArchive@{WriteArchive}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{WriteArchive()}{WriteArchive()}}
+{\footnotesize\ttfamily void Curso\+::\+Write\+Archive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPedidoAlteracao}{Pedido\+Alteracao}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+The Write\+Archive function makes note of all the change request that did not get accepted. Complexity\+: O(log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em p} & The request that was denied \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Code/\mbox{\hyperlink{Curso_8h}{Curso.\+h}}\item 
+Code/\mbox{\hyperlink{Curso_8cpp}{Curso.\+cpp}}\end{DoxyCompactItemize}

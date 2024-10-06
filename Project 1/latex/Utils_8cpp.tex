@@ -1,0 +1,160 @@
+\hypertarget{Utils_8cpp}{}\doxysection{Code/\+Utils.cpp File Reference}
+\label{Utils_8cpp}\index{Code/Utils.cpp@{Code/Utils.cpp}}
+{\ttfamily \#include \char`\"{}Utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}File\+Reader.\+h\char`\"{}}\newline
+Include dependency graph for Utils.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Utils_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{Utils_8cpp_a51c5801508e518ac64d0c5df86fa83f4}{sorter\+Horario\+Slot}} (\mbox{\hyperlink{classSlot}{Slot}} $\ast$s1, \mbox{\hyperlink{classSlot}{Slot}} $\ast$s2)
+\item 
+bool \mbox{\hyperlink{Utils_8cpp_a19495f3413146e055d296aee31a7d404}{sorter\+Horario}} (pair$<$ \mbox{\hyperlink{classSlot}{Slot}} $\ast$, \mbox{\hyperlink{classTurma}{Turma}} $\ast$ $>$ s1, pair$<$ \mbox{\hyperlink{classSlot}{Slot}} $\ast$, \mbox{\hyperlink{classTurma}{Turma}} $\ast$ $>$ s2)
+\item 
+std\+::string \mbox{\hyperlink{Utils_8cpp_a14565d2e48ec0083c8f79ecf604dc9f2}{Get\+Finish\+Time}} (std\+::string horario\+Inicio, std\+::string duracao)
+\item 
+std\+::string \mbox{\hyperlink{Utils_8cpp_ac485e4d661f1a3d5770540bf784e63c5}{Fixer}} (std\+::string horario\+Inicio)
+\item 
+void \mbox{\hyperlink{Utils_8cpp_aed2ced684bd60f8e1075fcf0df1ac2eb}{Print\+Vector}} (std\+::vector$<$ \mbox{\hyperlink{classTurma}{Turma}} $\ast$ $>$ v, char option)
+\item 
+int \mbox{\hyperlink{Utils_8cpp_a9a70accfd0d69e3e22263e5fea62a5f9}{aux\+Menu}} (int max\+Option, int min\+Option)
+\item 
+std\+::string \mbox{\hyperlink{Utils_8cpp_adf7c34b6c7b9e292ba6398ddf0d0fcb8}{tolower\+String}} (std\+::string s)
+\item 
+bool \mbox{\hyperlink{Utils_8cpp_a4fd5148982b9f9267f13836a706631b8}{is\+Compatible}} (std\+::list$<$ \mbox{\hyperlink{classSlot}{Slot}} $\ast$ $>$ horario\+Uc\+Turma, std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{classSlot}{Slot}} $\ast$, \mbox{\hyperlink{classTurma}{Turma}} $\ast$ $>$$>$ horario\+Student, \mbox{\hyperlink{classTurma}{Turma}} $\ast$turma)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, int $>$ \mbox{\hyperlink{Utils_8cpp_a66d3732e1e34b5fc6fc9490f9b20e580}{week\+Days}} \{\{\char`\"{}Monday\char`\"{}, 1\}, \{\char`\"{}Tuesday\char`\"{}, 2\}, \{\char`\"{}Wednesday\char`\"{}, 3\}, \{\char`\"{}Thursday\char`\"{}, 4\}, \{\char`\"{}Friday\char`\"{}, 5\}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Utils_8cpp_a9a70accfd0d69e3e22263e5fea62a5f9}\label{Utils_8cpp_a9a70accfd0d69e3e22263e5fea62a5f9}} 
+\index{Utils.cpp@{Utils.cpp}!auxMenu@{auxMenu}}
+\index{auxMenu@{auxMenu}!Utils.cpp@{Utils.cpp}}
+\doxysubsubsection{\texorpdfstring{auxMenu()}{auxMenu()}}
+{\footnotesize\ttfamily int aux\+Menu (\begin{DoxyParamCaption}\item[{int}]{max\+Option,  }\item[{int}]{min\+Option }\end{DoxyParamCaption})}
+
+The aux\+Menu function is used to limit the input that users can make in the menu. Complexity\+: O(n log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em max\+Option} & User input has to be $<$ than this variable \\
+\hline
+{\em min\+Option} & User input has to be $>$ than this variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User input 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utils_8cpp_ac485e4d661f1a3d5770540bf784e63c5}\label{Utils_8cpp_ac485e4d661f1a3d5770540bf784e63c5}} 
+\index{Utils.cpp@{Utils.cpp}!Fixer@{Fixer}}
+\index{Fixer@{Fixer}!Utils.cpp@{Utils.cpp}}
+\doxysubsubsection{\texorpdfstring{Fixer()}{Fixer()}}
+{\footnotesize\ttfamily std\+::string Fixer (\begin{DoxyParamCaption}\item[{std\+::string}]{horario\+Inicio }\end{DoxyParamCaption})}
+
+The Fixer function returns the time provided in the files in a more readable way. Complexity\+: O(log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em horario\+Inicio} & Start time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+More readable time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utils_8cpp_a14565d2e48ec0083c8f79ecf604dc9f2}\label{Utils_8cpp_a14565d2e48ec0083c8f79ecf604dc9f2}} 
+\index{Utils.cpp@{Utils.cpp}!GetFinishTime@{GetFinishTime}}
+\index{GetFinishTime@{GetFinishTime}!Utils.cpp@{Utils.cpp}}
+\doxysubsubsection{\texorpdfstring{GetFinishTime()}{GetFinishTime()}}
+{\footnotesize\ttfamily std\+::string Get\+Finish\+Time (\begin{DoxyParamCaption}\item[{std\+::string}]{horario\+Inicio,  }\item[{std\+::string}]{duracao }\end{DoxyParamCaption})}
+
+The Get\+Finish\+Time function returns the time that a class ends. Complexity\+: O(log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em horario\+Inicio} & Class start time \\
+\hline
+{\em duracao} & Class duration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Class ending time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utils_8cpp_a4fd5148982b9f9267f13836a706631b8}\label{Utils_8cpp_a4fd5148982b9f9267f13836a706631b8}} 
+\index{Utils.cpp@{Utils.cpp}!isCompatible@{isCompatible}}
+\index{isCompatible@{isCompatible}!Utils.cpp@{Utils.cpp}}
+\doxysubsubsection{\texorpdfstring{isCompatible()}{isCompatible()}}
+{\footnotesize\ttfamily bool is\+Compatible (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{classSlot}{Slot}} $\ast$ $>$}]{horario\+Uc\+Turma,  }\item[{std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{classSlot}{Slot}} $\ast$, \mbox{\hyperlink{classTurma}{Turma}} $\ast$ $>$$>$}]{horario\+Student,  }\item[{\mbox{\hyperlink{classTurma}{Turma}} $\ast$}]{turma = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+The is\+Compatible function verifies is the schedule of a student is compatible with the one of another class. Complexity\+: O(n²) 
+\begin{DoxyParams}{Parameters}
+{\em list\+Slot} & the slot to be verified. \\
+\hline
+{\em vector} & \mbox{\hyperlink{classStudent}{Student}} schedule. \\
+\hline
+{\em turma} & the class to compare to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utils_8cpp_aed2ced684bd60f8e1075fcf0df1ac2eb}\label{Utils_8cpp_aed2ced684bd60f8e1075fcf0df1ac2eb}} 
+\index{Utils.cpp@{Utils.cpp}!PrintVector@{PrintVector}}
+\index{PrintVector@{PrintVector}!Utils.cpp@{Utils.cpp}}
+\doxysubsubsection{\texorpdfstring{PrintVector()}{PrintVector()}}
+{\footnotesize\ttfamily void Print\+Vector (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classTurma}{Turma}} $\ast$ $>$}]{v,  }\item[{char}]{option }\end{DoxyParamCaption})}
+
+The Print\+Vector function prints either the number of students in a class or the free spots in a class. Complexity\+: O(n) 
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector containing the classes to print. \\
+\hline
+{\em option} & Option chosen, either the number of students or free spots. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Utils_8cpp_a19495f3413146e055d296aee31a7d404}\label{Utils_8cpp_a19495f3413146e055d296aee31a7d404}} 
+\index{Utils.cpp@{Utils.cpp}!sorterHorario@{sorterHorario}}
+\index{sorterHorario@{sorterHorario}!Utils.cpp@{Utils.cpp}}
+\doxysubsubsection{\texorpdfstring{sorterHorario()}{sorterHorario()}}
+{\footnotesize\ttfamily bool sorter\+Horario (\begin{DoxyParamCaption}\item[{pair$<$ \mbox{\hyperlink{classSlot}{Slot}} $\ast$, \mbox{\hyperlink{classTurma}{Turma}} $\ast$ $>$}]{s1,  }\item[{pair$<$ \mbox{\hyperlink{classSlot}{Slot}} $\ast$, \mbox{\hyperlink{classTurma}{Turma}} $\ast$ $>$}]{s2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Utils_8cpp_a51c5801508e518ac64d0c5df86fa83f4}\label{Utils_8cpp_a51c5801508e518ac64d0c5df86fa83f4}} 
+\index{Utils.cpp@{Utils.cpp}!sorterHorarioSlot@{sorterHorarioSlot}}
+\index{sorterHorarioSlot@{sorterHorarioSlot}!Utils.cpp@{Utils.cpp}}
+\doxysubsubsection{\texorpdfstring{sorterHorarioSlot()}{sorterHorarioSlot()}}
+{\footnotesize\ttfamily bool sorter\+Horario\+Slot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSlot}{Slot}} $\ast$}]{s1,  }\item[{\mbox{\hyperlink{classSlot}{Slot}} $\ast$}]{s2 }\end{DoxyParamCaption})}
+
+The sorter\+Horario\+Slot function is used to compare two classes and return the one earliest one. Complexity\+: O(log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em s1} & Class 1 \\
+\hline
+{\em s2} & Class 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utils_8cpp_adf7c34b6c7b9e292ba6398ddf0d0fcb8}\label{Utils_8cpp_adf7c34b6c7b9e292ba6398ddf0d0fcb8}} 
+\index{Utils.cpp@{Utils.cpp}!tolowerString@{tolowerString}}
+\index{tolowerString@{tolowerString}!Utils.cpp@{Utils.cpp}}
+\doxysubsubsection{\texorpdfstring{tolowerString()}{tolowerString()}}
+{\footnotesize\ttfamily std\+::string tolower\+String (\begin{DoxyParamCaption}\item[{std\+::string}]{s }\end{DoxyParamCaption})}
+
+The tolower\+String function returns a string in lower case. Complexity\+: O(n) 
+\begin{DoxyParams}{Parameters}
+{\em s} & String received. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String in lower case 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Utils_8cpp_a66d3732e1e34b5fc6fc9490f9b20e580}\label{Utils_8cpp_a66d3732e1e34b5fc6fc9490f9b20e580}} 
+\index{Utils.cpp@{Utils.cpp}!weekDays@{weekDays}}
+\index{weekDays@{weekDays}!Utils.cpp@{Utils.cpp}}
+\doxysubsubsection{\texorpdfstring{weekDays}{weekDays}}
+{\footnotesize\ttfamily map$<$string , int$>$ week\+Days \{\{\char`\"{}Monday\char`\"{}, 1\}, \{\char`\"{}Tuesday\char`\"{}, 2\}, \{\char`\"{}Wednesday\char`\"{}, 3\}, \{\char`\"{}Thursday\char`\"{}, 4\}, \{\char`\"{}Friday\char`\"{}, 5\}\}}
+

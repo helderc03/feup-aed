@@ -1,0 +1,152 @@
+\hypertarget{classTurma}{}\doxysection{Turma Class Reference}
+\label{classTurma}\index{Turma@{Turma}}
+
+
+{\ttfamily \#include $<$Turma.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTurma_a49721f02245ae027004fe423f14425cd}{Turma}} (std\+::string \&turma\+Code, std\+::string \&uc\+Code)
+\item 
+std\+::string \mbox{\hyperlink{classTurma_a66abf7aa1f29aa98d5ddc897764aa7e4}{get\+\_\+turma\+Code}} () const
+\item 
+std\+::string \mbox{\hyperlink{classTurma_a6de5cd4e567e7d162b5e43934ba8c5d2}{get\+\_\+uc\+Code}} () const
+\item 
+int \mbox{\hyperlink{classTurma_ac8020012126f8a8689419181698fcd2b}{get\+\_\+nr\+Students\+Turma}} () const
+\item 
+std\+::list$<$ \mbox{\hyperlink{classSlot}{Slot}} $\ast$ $>$ \mbox{\hyperlink{classTurma_a004608f94a5a9924ba9714938208b250}{get\+Horario\+Uc\+Turma}} () const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$ $>$ \mbox{\hyperlink{classTurma_ac82987753c9de64b845395ee934b6022}{get\+Students\+Turma}} () const
+\item 
+void \mbox{\hyperlink{classTurma_ab6edb3fdd9d6ed999badc4daaf22d412}{Add\+Student}} (\mbox{\hyperlink{classStudent}{Student}} $\ast$student)
+\item 
+void \mbox{\hyperlink{classTurma_ae1ec80daa89abda0f98ff8302c4ddc6b}{Remove\+Student}} (\mbox{\hyperlink{classStudent}{Student}} $\ast$student)
+\item 
+void \mbox{\hyperlink{classTurma_af494d395333a41053016de747dc134c8}{Add\+Slot}} (\mbox{\hyperlink{classSlot}{Slot}} $\ast$slot)
+\item 
+void \mbox{\hyperlink{classTurma_a766612f657807135c08d39aec3cfdcb2}{Print\+Turma}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classTurma_ac09c6738ba40aa141c3ac684266a78e8}{default\+Cap}} = 24
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTurma_a49721f02245ae027004fe423f14425cd}\label{classTurma_a49721f02245ae027004fe423f14425cd}} 
+\index{Turma@{Turma}!Turma@{Turma}}
+\index{Turma@{Turma}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{Turma()}{Turma()}}
+{\footnotesize\ttfamily Turma\+::\+Turma (\begin{DoxyParamCaption}\item[{std\+::string \&}]{turma\+Code,  }\item[{std\+::string \&}]{uc\+Code }\end{DoxyParamCaption})}
+
+Constructor for class \mbox{\hyperlink{classTurma}{Turma}}. Complexity\+: O(1) 
+\begin{DoxyParams}{Parameters}
+{\em turma\+Code} & Class Code \\
+\hline
+{\em uc\+Code} & Uc Code \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTurma_af494d395333a41053016de747dc134c8}\label{classTurma_af494d395333a41053016de747dc134c8}} 
+\index{Turma@{Turma}!AddSlot@{AddSlot}}
+\index{AddSlot@{AddSlot}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{AddSlot()}{AddSlot()}}
+{\footnotesize\ttfamily void Turma\+::\+Add\+Slot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSlot}{Slot}} $\ast$}]{slot }\end{DoxyParamCaption})}
+
+The Add\+Slot function adds a slot for a lesson. Complexity\+: O(1) 
+\begin{DoxyParams}{Parameters}
+{\em slot} & The slot to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTurma_ab6edb3fdd9d6ed999badc4daaf22d412}\label{classTurma_ab6edb3fdd9d6ed999badc4daaf22d412}} 
+\index{Turma@{Turma}!AddStudent@{AddStudent}}
+\index{AddStudent@{AddStudent}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{AddStudent()}{AddStudent()}}
+{\footnotesize\ttfamily void Turma\+::\+Add\+Student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStudent}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+The Add\+Student function adds a student to a class. Complexity\+: O(1) 
+\begin{DoxyParams}{Parameters}
+{\em student} & The student to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTurma_ac8020012126f8a8689419181698fcd2b}\label{classTurma_ac8020012126f8a8689419181698fcd2b}} 
+\index{Turma@{Turma}!get\_nrStudentsTurma@{get\_nrStudentsTurma}}
+\index{get\_nrStudentsTurma@{get\_nrStudentsTurma}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{get\_nrStudentsTurma()}{get\_nrStudentsTurma()}}
+{\footnotesize\ttfamily int Turma\+::get\+\_\+nr\+Students\+Turma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+The get\+\_\+nr\+Students\+Turma fucntion return the number of students in a class. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+The number of students in that class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTurma_a66abf7aa1f29aa98d5ddc897764aa7e4}\label{classTurma_a66abf7aa1f29aa98d5ddc897764aa7e4}} 
+\index{Turma@{Turma}!get\_turmaCode@{get\_turmaCode}}
+\index{get\_turmaCode@{get\_turmaCode}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{get\_turmaCode()}{get\_turmaCode()}}
+{\footnotesize\ttfamily std\+::string Turma\+::get\+\_\+turma\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+The get\+\_\+turma\+Code function is a getter for the class code. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+Class code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTurma_a6de5cd4e567e7d162b5e43934ba8c5d2}\label{classTurma_a6de5cd4e567e7d162b5e43934ba8c5d2}} 
+\index{Turma@{Turma}!get\_ucCode@{get\_ucCode}}
+\index{get\_ucCode@{get\_ucCode}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{get\_ucCode()}{get\_ucCode()}}
+{\footnotesize\ttfamily std\+::string Turma\+::get\+\_\+uc\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+The get\+\_\+uc\+Code function is a getter for the Uc Code of a class. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+Uc Code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTurma_a004608f94a5a9924ba9714938208b250}\label{classTurma_a004608f94a5a9924ba9714938208b250}} 
+\index{Turma@{Turma}!getHorarioUcTurma@{getHorarioUcTurma}}
+\index{getHorarioUcTurma@{getHorarioUcTurma}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{getHorarioUcTurma()}{getHorarioUcTurma()}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{classSlot}{Slot}} $\ast$ $>$ Turma\+::get\+Horario\+Uc\+Turma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+The get\+Horario\+Uc\+Turma returns the schedule of a class for a certain Uc. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+Schedule for that UC 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTurma_ac82987753c9de64b845395ee934b6022}\label{classTurma_ac82987753c9de64b845395ee934b6022}} 
+\index{Turma@{Turma}!getStudentsTurma@{getStudentsTurma}}
+\index{getStudentsTurma@{getStudentsTurma}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{getStudentsTurma()}{getStudentsTurma()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$ $>$ Turma\+::get\+Students\+Turma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+The get\+Students\+Turma returns the students in a class. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+Students in that class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTurma_a766612f657807135c08d39aec3cfdcb2}\label{classTurma_a766612f657807135c08d39aec3cfdcb2}} 
+\index{Turma@{Turma}!PrintTurma@{PrintTurma}}
+\index{PrintTurma@{PrintTurma}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{PrintTurma()}{PrintTurma()}}
+{\footnotesize\ttfamily void Turma\+::\+Print\+Turma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The Print\+Turma function prints the students enrolled in a certain class. Complexity\+: O(n) \mbox{\Hypertarget{classTurma_ae1ec80daa89abda0f98ff8302c4ddc6b}\label{classTurma_ae1ec80daa89abda0f98ff8302c4ddc6b}} 
+\index{Turma@{Turma}!RemoveStudent@{RemoveStudent}}
+\index{RemoveStudent@{RemoveStudent}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{RemoveStudent()}{RemoveStudent()}}
+{\footnotesize\ttfamily void Turma\+::\+Remove\+Student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStudent}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+The Remove\+Student function removes a student from a class. Complexity\+: O(n) 
+\begin{DoxyParams}{Parameters}
+{\em student} & The student to be removed \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTurma_ac09c6738ba40aa141c3ac684266a78e8}\label{classTurma_ac09c6738ba40aa141c3ac684266a78e8}} 
+\index{Turma@{Turma}!defaultCap@{defaultCap}}
+\index{defaultCap@{defaultCap}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{defaultCap}{defaultCap}}
+{\footnotesize\ttfamily int Turma\+::default\+Cap = 24}
+
+The cap for a class size. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Code/\mbox{\hyperlink{Turma_8h}{Turma.\+h}}\item 
+Code/\mbox{\hyperlink{Turma_8cpp}{Turma.\+cpp}}\end{DoxyCompactItemize}

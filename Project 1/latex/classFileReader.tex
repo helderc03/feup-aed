@@ -1,0 +1,69 @@
+\hypertarget{classFileReader}{}\doxysection{File\+Reader Class Reference}
+\label{classFileReader}\index{FileReader@{FileReader}}
+
+
+{\ttfamily \#include $<$File\+Reader.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFileReader_ae3c6b37858980eb3e2bebaaf4a7ef73f}{File\+Reader}} (std\+::istream \&studentsinfo\+\_\+file, std\+::istream \&aulas\+\_\+file)
+\item 
+std\+::set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$ \mbox{\hyperlink{classFileReader_ab603132adb49e2e936f10ccf9cc05049}{get\+Students}} () const
+\item 
+std\+::set$<$ \mbox{\hyperlink{classTurma}{Turma}} $\ast$, \mbox{\hyperlink{structturmaComparator}{turma\+Comparator}} $>$ \mbox{\hyperlink{classFileReader_a0af4f7904390faafb40ca4da41e87f30}{get\+Turmas}} () const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSlot}{Slot}} $\ast$ $>$ \mbox{\hyperlink{classFileReader_a0955c02a0004bcedde073bbbb85b8a56}{get\+Slots}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFileReader_ae3c6b37858980eb3e2bebaaf4a7ef73f}\label{classFileReader_ae3c6b37858980eb3e2bebaaf4a7ef73f}} 
+\index{FileReader@{FileReader}!FileReader@{FileReader}}
+\index{FileReader@{FileReader}!FileReader@{FileReader}}
+\doxysubsubsection{\texorpdfstring{FileReader()}{FileReader()}}
+{\footnotesize\ttfamily File\+Reader\+::\+File\+Reader (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{studentsinfo\+\_\+file,  }\item[{std\+::istream \&}]{aulas\+\_\+file }\end{DoxyParamCaption})}
+
+Initializer that starts the reading of files. Complexity\+: O(n⁴ log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em studentsinfo\+\_\+file} & Path to to student\textquotesingle{}s info file \\
+\hline
+{\em aulas\+\_\+file} & Path to lesson\textquotesingle{}s info file \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFileReader_a0955c02a0004bcedde073bbbb85b8a56}\label{classFileReader_a0955c02a0004bcedde073bbbb85b8a56}} 
+\index{FileReader@{FileReader}!getSlots@{getSlots}}
+\index{getSlots@{getSlots}!FileReader@{FileReader}}
+\doxysubsubsection{\texorpdfstring{getSlots()}{getSlots()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classSlot}{Slot}} $\ast$ $>$ File\+Reader\+::get\+Slots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+The get\+Slots is a getter for all lesson slots. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+All lessons slots 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFileReader_ab603132adb49e2e936f10ccf9cc05049}\label{classFileReader_ab603132adb49e2e936f10ccf9cc05049}} 
+\index{FileReader@{FileReader}!getStudents@{getStudents}}
+\index{getStudents@{getStudents}!FileReader@{FileReader}}
+\doxysubsubsection{\texorpdfstring{getStudents()}{getStudents()}}
+{\footnotesize\ttfamily set$<$ \mbox{\hyperlink{classStudent}{Student}} $\ast$, \mbox{\hyperlink{structstudentComparator}{student\+Comparator}} $>$ File\+Reader\+::get\+Students (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+The get\+Students function is getter for all students. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+All students 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFileReader_a0af4f7904390faafb40ca4da41e87f30}\label{classFileReader_a0af4f7904390faafb40ca4da41e87f30}} 
+\index{FileReader@{FileReader}!getTurmas@{getTurmas}}
+\index{getTurmas@{getTurmas}!FileReader@{FileReader}}
+\doxysubsubsection{\texorpdfstring{getTurmas()}{getTurmas()}}
+{\footnotesize\ttfamily std\+::set$<$ \mbox{\hyperlink{classTurma}{Turma}} $\ast$, \mbox{\hyperlink{structturmaComparator}{turma\+Comparator}} $>$ File\+Reader\+::get\+Turmas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+The get\+Turmas function is a getter for all classes. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+All classes 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Code/\mbox{\hyperlink{FileReader_8h}{File\+Reader.\+h}}\item 
+Code/\mbox{\hyperlink{FileReader_8cpp}{File\+Reader.\+cpp}}\end{DoxyCompactItemize}

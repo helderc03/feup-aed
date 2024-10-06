@@ -1,0 +1,309 @@
+\hypertarget{Menu_8h}{}\doxysection{Code/\+Menu.h File Reference}
+\label{Menu_8h}\index{Code/Menu.h@{Code/Menu.h}}
+{\ttfamily \#include \char`\"{}Curso.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Utils.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+Include dependency graph for Menu.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Menu_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Menu_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{Menu_8h_a182b8ffa5971ba4ab2bbc34ee62f2f5d}{Menu}} (std\+::ifstream \&studentsinfo\+\_\+file, std\+::ifstream \&aulas\+\_\+file)
+\item 
+int \mbox{\hyperlink{Menu_8h_a8396c50bf544009fb2fc4907b00cbad3}{main\+Menu}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_a13ef32adcec6b3c4da5d2c0dfc100146}{student\+Menu}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_aaee8b866f29889c6f004d8d6ceafefb7}{student\+Menu2}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_ab119af2e6c99ca3e8f61b1043940368c}{turma\+Menu}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_a66cfff24c47076f9731eb8b68ffec73e}{turma\+Menu2}} (int ano)
+\item 
+int \mbox{\hyperlink{Menu_8h_aee4bff5cde9c8841703cb1086a0a51f2}{turma\+Menu3}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_a050261c3cfe23443c91d65a8a2f0b493}{turma\+Menu\+Horário}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_a845c20a8289f407ab77e5b8189fe667a}{turma\+Menu\+Students}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_a0c6b54d774ba576a827543cdca23e554}{display\+Students}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_a368778dc4cfb8de9c732e4fc4cf1e48b}{listagens\+Menu}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_ab8d25e04ad41180ffef1450d4ece8b56}{listagens\+Ano\+Menu}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_a827cd579136ca8ab9ac62782f8207e59}{turma\+Listagem\+Menu}} ()
+\item 
+std\+::string \mbox{\hyperlink{Menu_8h_aeca1e798d0c9c2e9fe4f661ca32a9015}{uc\+Code}} (std\+::vector$<$ \mbox{\hyperlink{classTurma}{Turma}} $\ast$ $>$ vt)
+\item 
+int \mbox{\hyperlink{Menu_8h_ae42c6763cf6f179e94e7dc5851d7a75d}{uc\+Listagem\+Menu}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_ab8a441f1517009614679831f45a6633b}{PAMenu}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_a3f202eecdf9bbb1ef45f8af75dc9fb58}{student\+Search\+Menu}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_abec376ba11a809a59d85fa0ffb964e1a}{Alocation\+UCMenu}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_ac0d32e2b844983d6cb7585a93948a145}{Removal\+UCMenu}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_acd1403b198f0dcba3b6401885e209f21}{Troca\+Direta\+Menu}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_a5da87abfbe03f0629c07299de5c16249}{Config\+Menu}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_a276172328a98acd8f15139c42926f7a3}{About\+Us\+Menu}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_ab29f21fcad353adc71a2967b2e80c2e3}{Estudantes\+UCMenu}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_a052edcc68d99f4fb36dfccd20740cdb0}{def\+Nr\+Uc\+Menu}} ()
+\item 
+int \mbox{\hyperlink{Menu_8h_ac643d1076c8843d4e481e628137cabf1}{order\+Type\+Menu}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Menu_8h_a276172328a98acd8f15139c42926f7a3}\label{Menu_8h_a276172328a98acd8f15139c42926f7a3}} 
+\index{Menu.h@{Menu.h}!AboutUsMenu@{AboutUsMenu}}
+\index{AboutUsMenu@{AboutUsMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{AboutUsMenu()}{AboutUsMenu()}}
+{\footnotesize\ttfamily int About\+Us\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Menu that tells a little about the creator of the project. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_abec376ba11a809a59d85fa0ffb964e1a}\label{Menu_8h_abec376ba11a809a59d85fa0ffb964e1a}} 
+\index{Menu.h@{Menu.h}!AlocationUCMenu@{AlocationUCMenu}}
+\index{AlocationUCMenu@{AlocationUCMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{AlocationUCMenu()}{AlocationUCMenu()}}
+{\footnotesize\ttfamily int Alocation\+UCMenu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Menu that shows different allocation options. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_a5da87abfbe03f0629c07299de5c16249}\label{Menu_8h_a5da87abfbe03f0629c07299de5c16249}} 
+\index{Menu.h@{Menu.h}!ConfigMenu@{ConfigMenu}}
+\index{ConfigMenu@{ConfigMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{ConfigMenu()}{ConfigMenu()}}
+{\footnotesize\ttfamily int Config\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Menu that allows to change the class size cap. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_a052edcc68d99f4fb36dfccd20740cdb0}\label{Menu_8h_a052edcc68d99f4fb36dfccd20740cdb0}} 
+\index{Menu.h@{Menu.h}!defNrUcMenu@{defNrUcMenu}}
+\index{defNrUcMenu@{defNrUcMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{defNrUcMenu()}{defNrUcMenu()}}
+{\footnotesize\ttfamily int def\+Nr\+Uc\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Allows definition of a certain number of UCs for posterior filtering. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_a0c6b54d774ba576a827543cdca23e554}\label{Menu_8h_a0c6b54d774ba576a827543cdca23e554}} 
+\index{Menu.h@{Menu.h}!displayStudents@{displayStudents}}
+\index{displayStudents@{displayStudents}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{displayStudents()}{displayStudents()}}
+{\footnotesize\ttfamily int display\+Students (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Menu that allow to choose how user wants to see students displayed. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_ab29f21fcad353adc71a2967b2e80c2e3}\label{Menu_8h_ab29f21fcad353adc71a2967b2e80c2e3}} 
+\index{Menu.h@{Menu.h}!EstudantesUCMenu@{EstudantesUCMenu}}
+\index{EstudantesUCMenu@{EstudantesUCMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{EstudantesUCMenu()}{EstudantesUCMenu()}}
+{\footnotesize\ttfamily int Estudantes\+UCMenu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Menu that shows different students per UC listing options. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_ab8d25e04ad41180ffef1450d4ece8b56}\label{Menu_8h_ab8d25e04ad41180ffef1450d4ece8b56}} 
+\index{Menu.h@{Menu.h}!listagensAnoMenu@{listagensAnoMenu}}
+\index{listagensAnoMenu@{listagensAnoMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{listagensAnoMenu()}{listagensAnoMenu()}}
+{\footnotesize\ttfamily int listagens\+Ano\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Small menu that allows the choosing of year, either for a class or for student. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_a368778dc4cfb8de9c732e4fc4cf1e48b}\label{Menu_8h_a368778dc4cfb8de9c732e4fc4cf1e48b}} 
+\index{Menu.h@{Menu.h}!listagensMenu@{listagensMenu}}
+\index{listagensMenu@{listagensMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{listagensMenu()}{listagensMenu()}}
+{\footnotesize\ttfamily int listagens\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Menu that allows access to multiple listings. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_a8396c50bf544009fb2fc4907b00cbad3}\label{Menu_8h_a8396c50bf544009fb2fc4907b00cbad3}} 
+\index{Menu.h@{Menu.h}!mainMenu@{mainMenu}}
+\index{mainMenu@{mainMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{mainMenu()}{mainMenu()}}
+{\footnotesize\ttfamily int main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The main menu showing the user the options he has. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_a182b8ffa5971ba4ab2bbc34ee62f2f5d}\label{Menu_8h_a182b8ffa5971ba4ab2bbc34ee62f2f5d}} 
+\index{Menu.h@{Menu.h}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily void Menu (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{studentsinfo\+\_\+file,  }\item[{std\+::ifstream \&}]{aulas\+\_\+file }\end{DoxyParamCaption})}
+
+Initial menu that allow the user to input the path where the data should be read from. Complexity\+: O(n log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em studentsinfo\+\_\+file} & Path to file containing student\textquotesingle{}s info \\
+\hline
+{\em aulas\+\_\+file} & Path to file containing lesson\textquotesingle{}s info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Menu_8h_ac643d1076c8843d4e481e628137cabf1}\label{Menu_8h_ac643d1076c8843d4e481e628137cabf1}} 
+\index{Menu.h@{Menu.h}!orderTypeMenu@{orderTypeMenu}}
+\index{orderTypeMenu@{orderTypeMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{orderTypeMenu()}{orderTypeMenu()}}
+{\footnotesize\ttfamily int order\+Type\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The type of ordering the user wants on the listings. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_ab8a441f1517009614679831f45a6633b}\label{Menu_8h_ab8a441f1517009614679831f45a6633b}} 
+\index{Menu.h@{Menu.h}!PAMenu@{PAMenu}}
+\index{PAMenu@{PAMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{PAMenu()}{PAMenu()}}
+{\footnotesize\ttfamily int PAMenu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Menu that shows the possible alterations you can make. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_ac0d32e2b844983d6cb7585a93948a145}\label{Menu_8h_ac0d32e2b844983d6cb7585a93948a145}} 
+\index{Menu.h@{Menu.h}!RemovalUCMenu@{RemovalUCMenu}}
+\index{RemovalUCMenu@{RemovalUCMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{RemovalUCMenu()}{RemovalUCMenu()}}
+{\footnotesize\ttfamily int Removal\+UCMenu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Menu that leads to a student\textquotesingle{}s removal from a certain class. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_a13ef32adcec6b3c4da5d2c0dfc100146}\label{Menu_8h_a13ef32adcec6b3c4da5d2c0dfc100146}} 
+\index{Menu.h@{Menu.h}!studentMenu@{studentMenu}}
+\index{studentMenu@{studentMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{studentMenu()}{studentMenu()}}
+{\footnotesize\ttfamily int student\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The menu containing the options for information related to 1 student. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_aaee8b866f29889c6f004d8d6ceafefb7}\label{Menu_8h_aaee8b866f29889c6f004d8d6ceafefb7}} 
+\index{Menu.h@{Menu.h}!studentMenu2@{studentMenu2}}
+\index{studentMenu2@{studentMenu2}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{studentMenu2()}{studentMenu2()}}
+{\footnotesize\ttfamily int student\+Menu2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sub-\/menu in student\+Menu. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_a3f202eecdf9bbb1ef45f8af75dc9fb58}\label{Menu_8h_a3f202eecdf9bbb1ef45f8af75dc9fb58}} 
+\index{Menu.h@{Menu.h}!studentSearchMenu@{studentSearchMenu}}
+\index{studentSearchMenu@{studentSearchMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{studentSearchMenu()}{studentSearchMenu()}}
+{\footnotesize\ttfamily int student\+Search\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Small menu that allows searching for a certain student. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_acd1403b198f0dcba3b6401885e209f21}\label{Menu_8h_acd1403b198f0dcba3b6401885e209f21}} 
+\index{Menu.h@{Menu.h}!TrocaDiretaMenu@{TrocaDiretaMenu}}
+\index{TrocaDiretaMenu@{TrocaDiretaMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{TrocaDiretaMenu()}{TrocaDiretaMenu()}}
+{\footnotesize\ttfamily int Troca\+Direta\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Menu that leads to a direct student exchange. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_a827cd579136ca8ab9ac62782f8207e59}\label{Menu_8h_a827cd579136ca8ab9ac62782f8207e59}} 
+\index{Menu.h@{Menu.h}!turmaListagemMenu@{turmaListagemMenu}}
+\index{turmaListagemMenu@{turmaListagemMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{turmaListagemMenu()}{turmaListagemMenu()}}
+{\footnotesize\ttfamily int turma\+Listagem\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Menu that allows access to listings related to classes. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_ab119af2e6c99ca3e8f61b1043940368c}\label{Menu_8h_ab119af2e6c99ca3e8f61b1043940368c}} 
+\index{Menu.h@{Menu.h}!turmaMenu@{turmaMenu}}
+\index{turmaMenu@{turmaMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{turmaMenu()}{turmaMenu()}}
+{\footnotesize\ttfamily int turma\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The menu containing the options for information related to 1 class. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_a66cfff24c47076f9731eb8b68ffec73e}\label{Menu_8h_a66cfff24c47076f9731eb8b68ffec73e}} 
+\index{Menu.h@{Menu.h}!turmaMenu2@{turmaMenu2}}
+\index{turmaMenu2@{turmaMenu2}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{turmaMenu2()}{turmaMenu2()}}
+{\footnotesize\ttfamily int turma\+Menu2 (\begin{DoxyParamCaption}\item[{int}]{ano }\end{DoxyParamCaption})}
+
+Sub-\/menu in turma\+Menu. Complexity\+: O(n log(n)) 
+\begin{DoxyParams}{Parameters}
+{\em ano} & Classe\textquotesingle{}s year \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_aee4bff5cde9c8841703cb1086a0a51f2}\label{Menu_8h_aee4bff5cde9c8841703cb1086a0a51f2}} 
+\index{Menu.h@{Menu.h}!turmaMenu3@{turmaMenu3}}
+\index{turmaMenu3@{turmaMenu3}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{turmaMenu3()}{turmaMenu3()}}
+{\footnotesize\ttfamily int turma\+Menu3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sub-\/menu in turma\+Menu. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_a050261c3cfe23443c91d65a8a2f0b493}\label{Menu_8h_a050261c3cfe23443c91d65a8a2f0b493}} 
+\index{Menu.h@{Menu.h}!turmaMenuHorário@{turmaMenuHorário}}
+\index{turmaMenuHorário@{turmaMenuHorário}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{turmaMenuHorário()}{turmaMenuHorário()}}
+{\footnotesize\ttfamily int turma\+Menu\+Horário (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Menu for getting the schedule for a certain class. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_a845c20a8289f407ab77e5b8189fe667a}\label{Menu_8h_a845c20a8289f407ab77e5b8189fe667a}} 
+\index{Menu.h@{Menu.h}!turmaMenuStudents@{turmaMenuStudents}}
+\index{turmaMenuStudents@{turmaMenuStudents}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{turmaMenuStudents()}{turmaMenuStudents()}}
+{\footnotesize\ttfamily int turma\+Menu\+Students (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Menu for getting the students in a certain class. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Menu_8h_aeca1e798d0c9c2e9fe4f661ca32a9015}\label{Menu_8h_aeca1e798d0c9c2e9fe4f661ca32a9015}} 
+\index{Menu.h@{Menu.h}!ucCode@{ucCode}}
+\index{ucCode@{ucCode}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{ucCode()}{ucCode()}}
+{\footnotesize\ttfamily std\+::string uc\+Code (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classTurma}{Turma}} $\ast$ $>$}]{vt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Menu_8h_ae42c6763cf6f179e94e7dc5851d7a75d}\label{Menu_8h_ae42c6763cf6f179e94e7dc5851d7a75d}} 
+\index{Menu.h@{Menu.h}!ucListagemMenu@{ucListagemMenu}}
+\index{ucListagemMenu@{ucListagemMenu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{ucListagemMenu()}{ucListagemMenu()}}
+{\footnotesize\ttfamily int uc\+Listagem\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Menu that allows acess to listing related to Uc\textquotesingle{}s. Complexity\+: O(n log(n)) \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
