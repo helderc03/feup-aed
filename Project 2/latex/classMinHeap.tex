@@ -1,0 +1,138 @@
+\hypertarget{classMinHeap}{}\doxysection{Min\+Heap Class Reference}
+\label{classMinHeap}\index{MinHeap@{MinHeap}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMinHeap_a1494d56ef51882cddcfa2e31316d150a}{Min\+Heap}} ()
+\item 
+\mbox{\hyperlink{classMinHeap_a9ae9f828559fb27315dff47cd8b8a798}{Min\+Heap}} (int max\+Size)
+\item 
+int \mbox{\hyperlink{classMinHeap_a6bf67fb0109c5cecdac503982661caac}{get\+Size}} ()
+\item 
+int \mbox{\hyperlink{classMinHeap_acb5d931e16ce508f91e46ad82f13abdd}{remove\+Min}} ()
+\item 
+void \mbox{\hyperlink{classMinHeap_a556bcfbaa2c79d15eef2945104b83f75}{insert}} (const int \&key, const int \&value)
+\item 
+void \mbox{\hyperlink{classMinHeap_aecd9ac8ad8ecca235b72a6eb6656f10b}{decrease\+Key}} (const int \&key, const int \&value)
+\item 
+void \mbox{\hyperlink{classMinHeap_a68f2cc9d9ee19f9f90ffc8a0a40feb38}{up\+Heap}} (int pos)
+\item 
+void \mbox{\hyperlink{classMinHeap_a51d9486a67c98ea7a78bb2e1a4b98c44}{down\+Heap}} (int pos)
+\item 
+bool \mbox{\hyperlink{classMinHeap_af47137027a13ba827398975caf0afe5e}{has\+Key}} (const int \&key)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMinHeap_a2cc608870f80d82c723819559410d51a}\label{classMinHeap_a2cc608870f80d82c723819559410d51a}} 
+std\+::unordered\+\_\+map$<$ int, int $>$ {\bfseries pos}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMinHeap_a1494d56ef51882cddcfa2e31316d150a}\label{classMinHeap_a1494d56ef51882cddcfa2e31316d150a}} 
+\index{MinHeap@{MinHeap}!MinHeap@{MinHeap}}
+\index{MinHeap@{MinHeap}!MinHeap@{MinHeap}}
+\doxysubsubsection{\texorpdfstring{MinHeap()}{MinHeap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Min\+Heap\+::\+Min\+Heap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor for the \mbox{\hyperlink{classMinHeap}{Min\+Heap}} class. Complexity\+: O(1) \mbox{\Hypertarget{classMinHeap_a9ae9f828559fb27315dff47cd8b8a798}\label{classMinHeap_a9ae9f828559fb27315dff47cd8b8a798}} 
+\index{MinHeap@{MinHeap}!MinHeap@{MinHeap}}
+\index{MinHeap@{MinHeap}!MinHeap@{MinHeap}}
+\doxysubsubsection{\texorpdfstring{MinHeap()}{MinHeap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Min\+Heap\+::\+Min\+Heap (\begin{DoxyParamCaption}\item[{int}]{max\+Size }\end{DoxyParamCaption})}
+
+Constructor for the \mbox{\hyperlink{classMinHeap}{Min\+Heap}} class. Complexity\+: O(1) 
+\begin{DoxyParams}{Parameters}
+{\em max\+Size} & Max size \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMinHeap_aecd9ac8ad8ecca235b72a6eb6656f10b}\label{classMinHeap_aecd9ac8ad8ecca235b72a6eb6656f10b}} 
+\index{MinHeap@{MinHeap}!decreaseKey@{decreaseKey}}
+\index{decreaseKey@{decreaseKey}!MinHeap@{MinHeap}}
+\doxysubsubsection{\texorpdfstring{decreaseKey()}{decreaseKey()}}
+{\footnotesize\ttfamily void Min\+Heap\+::decrease\+Key (\begin{DoxyParamCaption}\item[{const int \&}]{key,  }\item[{const int \&}]{value }\end{DoxyParamCaption})}
+
+Decreases a key\textquotesingle{}s value. Complexity\+: O(n) 
+\begin{DoxyParams}{Parameters}
+{\em key} & Key to modify \\
+\hline
+{\em value} & New value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMinHeap_a51d9486a67c98ea7a78bb2e1a4b98c44}\label{classMinHeap_a51d9486a67c98ea7a78bb2e1a4b98c44}} 
+\index{MinHeap@{MinHeap}!downHeap@{downHeap}}
+\index{downHeap@{downHeap}!MinHeap@{MinHeap}}
+\doxysubsubsection{\texorpdfstring{downHeap()}{downHeap()}}
+{\footnotesize\ttfamily void Min\+Heap\+::down\+Heap (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})}
+
+Swaps the order of elements. Complexity\+: O(n) 
+\begin{DoxyParams}{Parameters}
+{\em pos} & Position to be swapped \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMinHeap_a6bf67fb0109c5cecdac503982661caac}\label{classMinHeap_a6bf67fb0109c5cecdac503982661caac}} 
+\index{MinHeap@{MinHeap}!getSize@{getSize}}
+\index{getSize@{getSize}!MinHeap@{MinHeap}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily int Min\+Heap\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the size. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+Size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMinHeap_af47137027a13ba827398975caf0afe5e}\label{classMinHeap_af47137027a13ba827398975caf0afe5e}} 
+\index{MinHeap@{MinHeap}!hasKey@{hasKey}}
+\index{hasKey@{hasKey}!MinHeap@{MinHeap}}
+\doxysubsubsection{\texorpdfstring{hasKey()}{hasKey()}}
+{\footnotesize\ttfamily bool Min\+Heap\+::has\+Key (\begin{DoxyParamCaption}\item[{const int \&}]{key }\end{DoxyParamCaption})}
+
+Checks if a certain key exists. Complexity\+: O(1) 
+\begin{DoxyParams}{Parameters}
+{\em key} & Key to be found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True or false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMinHeap_a556bcfbaa2c79d15eef2945104b83f75}\label{classMinHeap_a556bcfbaa2c79d15eef2945104b83f75}} 
+\index{MinHeap@{MinHeap}!insert@{insert}}
+\index{insert@{insert}!MinHeap@{MinHeap}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void Min\+Heap\+::insert (\begin{DoxyParamCaption}\item[{const int \&}]{key,  }\item[{const int \&}]{value }\end{DoxyParamCaption})}
+
+Inserts a new value. Complexity\+: O(1) 
+\begin{DoxyParams}{Parameters}
+{\em key} & Key \\
+\hline
+{\em value} & Value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMinHeap_acb5d931e16ce508f91e46ad82f13abdd}\label{classMinHeap_acb5d931e16ce508f91e46ad82f13abdd}} 
+\index{MinHeap@{MinHeap}!removeMin@{removeMin}}
+\index{removeMin@{removeMin}!MinHeap@{MinHeap}}
+\doxysubsubsection{\texorpdfstring{removeMin()}{removeMin()}}
+{\footnotesize\ttfamily int Min\+Heap\+::remove\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Remove the first element and adjust the size. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+Removed element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMinHeap_a68f2cc9d9ee19f9f90ffc8a0a40feb38}\label{classMinHeap_a68f2cc9d9ee19f9f90ffc8a0a40feb38}} 
+\index{MinHeap@{MinHeap}!upHeap@{upHeap}}
+\index{upHeap@{upHeap}!MinHeap@{MinHeap}}
+\doxysubsubsection{\texorpdfstring{upHeap()}{upHeap()}}
+{\footnotesize\ttfamily void Min\+Heap\+::up\+Heap (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})}
+
+Swaps the order of elements. Complexity\+: O(n) 
+\begin{DoxyParams}{Parameters}
+{\em pos} & Position to be swapped \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Code/Min\+Heap.\+h\item 
+Code/Min\+Heap.\+cpp\end{DoxyCompactItemize}

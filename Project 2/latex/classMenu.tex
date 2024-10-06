@@ -1,0 +1,252 @@
+\hypertarget{classMenu}{}\doxysection{Menu Class Reference}
+\label{classMenu}\index{Menu@{Menu}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classMenu_a3331c4decde64f701e41aa77231257fb}{aux\+Menu}} (int max\+Option, int min\+Option)
+\item 
+int \mbox{\hyperlink{classMenu_af2479c56ab20abe25b90ad64fc092426}{main\+Menu}} ()
+\item 
+int \mbox{\hyperlink{classMenu_a501ddd0e866a5a127d3c6442e0b2705b}{About\+Us\+Menu}} ()
+\item 
+int \mbox{\hyperlink{classMenu_a0a00ff0e1c32757385f5337ac6cfec73}{flight\+Menu}} ()
+\item 
+int \mbox{\hyperlink{classMenu_a65d994970d7a83150df9cd9f27762bd2}{find\+Choice\+Menu}} ()
+\item 
+int \mbox{\hyperlink{classMenu_ab9f8f511d0dd0eee9c44b10c073d560e}{sub\+Menu}} ()
+\item 
+std\+::string \mbox{\hyperlink{classMenu_ab1c4237a20a0a28d335e5696289bf4a7}{find\+By\+Code}} (\mbox{\hyperlink{classManager}{Manager}} \&manager)
+\item 
+std\+::string \mbox{\hyperlink{classMenu_aae0db300acd38401f8a586f6b3687d4f}{findby\+City}} (\mbox{\hyperlink{classManager}{Manager}} \&manager)
+\item 
+std\+::string \mbox{\hyperlink{classMenu_a2a95944f568102062d4150d53e1d6371}{findby\+Country}} (\mbox{\hyperlink{classManager}{Manager}} \&manager)
+\item 
+int \mbox{\hyperlink{classMenu_ad28ebddbbfdf8888aea6c43653a08c70}{type\+Info\+Choice\+Menu}} ()
+\item 
+int \mbox{\hyperlink{classMenu_a5c71c0ae46ece71338c836799495f985}{info\+Choice\+Menu}} ()
+\item 
+int \mbox{\hyperlink{classMenu_a74d7594cd137edb509da902020ca6b38}{nr\+Flights}} ()
+\item 
+void \mbox{\hyperlink{classMenu_ae19aec628c43c05c33bbf9bdf441e5f3}{menu\+Controller}} (\mbox{\hyperlink{classManager}{Manager}} \&manager)
+\item 
+int \mbox{\hyperlink{classMenu_adbcfc5ca4892e22e6005d8bd4365c625}{top\+Airports\+Menu}} ()
+\item 
+int \mbox{\hyperlink{classMenu_a8031c73cda0be57f100e8d3ff876fee2}{choiceK}} ()
+\item 
+int \mbox{\hyperlink{classMenu_afa349f4a1f8c1f85f1be465ddff197c0}{airport\+Choice\+Menu1}} ()
+\item 
+int \mbox{\hyperlink{classMenu_abc2539203b6dc3b90b932fba07e58351}{airport\+Choice\+Menu2}} ()
+\item 
+int \mbox{\hyperlink{classMenu_a189923fdcf2bfaad83090e5509934192}{network\+Report\+Menu}} ()
+\item 
+std\+::string \mbox{\hyperlink{classMenu_adc7aef993368c621153e4c95c0607d0a}{country\+Report\+Menu}} (std\+::string \&country)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMenu_a501ddd0e866a5a127d3c6442e0b2705b}\label{classMenu_a501ddd0e866a5a127d3c6442e0b2705b}} 
+\index{Menu@{Menu}!AboutUsMenu@{AboutUsMenu}}
+\index{AboutUsMenu@{AboutUsMenu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{AboutUsMenu()}{AboutUsMenu()}}
+{\footnotesize\ttfamily int Menu\+::\+About\+Us\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints the about us menu and allows user choice. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_afa349f4a1f8c1f85f1be465ddff197c0}\label{classMenu_afa349f4a1f8c1f85f1be465ddff197c0}} 
+\index{Menu@{Menu}!airportChoiceMenu1@{airportChoiceMenu1}}
+\index{airportChoiceMenu1@{airportChoiceMenu1}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{airportChoiceMenu1()}{airportChoiceMenu1()}}
+{\footnotesize\ttfamily int Menu\+::airport\+Choice\+Menu1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Allows the user to choose the way to search for an airport (origin). Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_abc2539203b6dc3b90b932fba07e58351}\label{classMenu_abc2539203b6dc3b90b932fba07e58351}} 
+\index{Menu@{Menu}!airportChoiceMenu2@{airportChoiceMenu2}}
+\index{airportChoiceMenu2@{airportChoiceMenu2}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{airportChoiceMenu2()}{airportChoiceMenu2()}}
+{\footnotesize\ttfamily int Menu\+::airport\+Choice\+Menu2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Allows the user to choose the way to seach for an airport (destination). Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_a3331c4decde64f701e41aa77231257fb}\label{classMenu_a3331c4decde64f701e41aa77231257fb}} 
+\index{Menu@{Menu}!auxMenu@{auxMenu}}
+\index{auxMenu@{auxMenu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{auxMenu()}{auxMenu()}}
+{\footnotesize\ttfamily int Menu\+::aux\+Menu (\begin{DoxyParamCaption}\item[{int}]{max\+Option,  }\item[{int}]{min\+Option }\end{DoxyParamCaption})}
+
+Auxiliary menu that limits user input. Complexity\+: O(1) 
+\begin{DoxyParams}{Parameters}
+{\em max\+Option} & Max input allowed \\
+\hline
+{\em min\+Option} & Minimum input allowed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User input 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_a8031c73cda0be57f100e8d3ff876fee2}\label{classMenu_a8031c73cda0be57f100e8d3ff876fee2}} 
+\index{Menu@{Menu}!choiceK@{choiceK}}
+\index{choiceK@{choiceK}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{choiceK()}{choiceK()}}
+{\footnotesize\ttfamily int Menu\+::choiceK (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Allows the user to choose the k in the previous function. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_adc7aef993368c621153e4c95c0607d0a}\label{classMenu_adc7aef993368c621153e4c95c0607d0a}} 
+\index{Menu@{Menu}!countryReportMenu@{countryReportMenu}}
+\index{countryReportMenu@{countryReportMenu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{countryReportMenu()}{countryReportMenu()}}
+{\footnotesize\ttfamily string Menu\+::country\+Report\+Menu (\begin{DoxyParamCaption}\item[{std\+::string \&}]{country }\end{DoxyParamCaption})}
+
+Allows the user to choose the country. Complexity\+: O(1) 
+\begin{DoxyParams}{Parameters}
+{\em country} & Country \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The desired country 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_aae0db300acd38401f8a586f6b3687d4f}\label{classMenu_aae0db300acd38401f8a586f6b3687d4f}} 
+\index{Menu@{Menu}!findbyCity@{findbyCity}}
+\index{findbyCity@{findbyCity}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{findbyCity()}{findbyCity()}}
+{\footnotesize\ttfamily string Menu\+::findby\+City (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classManager}{Manager}} \&}]{manager }\end{DoxyParamCaption})}
+
+Finds all the airports in a city and allows user choice. Complexity\+: O(n) 
+\begin{DoxyParams}{Parameters}
+{\em manager} & \mbox{\hyperlink{classManager}{Manager}} object with all the information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The user\textquotesingle{}s choice airport code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_ab1c4237a20a0a28d335e5696289bf4a7}\label{classMenu_ab1c4237a20a0a28d335e5696289bf4a7}} 
+\index{Menu@{Menu}!findByCode@{findByCode}}
+\index{findByCode@{findByCode}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{findByCode()}{findByCode()}}
+{\footnotesize\ttfamily string Menu\+::find\+By\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classManager}{Manager}} \&}]{manager }\end{DoxyParamCaption})}
+
+Finds an airport by user inputting its code. Complexity\+: O(1) 
+\begin{DoxyParams}{Parameters}
+{\em manager} & \mbox{\hyperlink{classManager}{Manager}} object with all the information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The requested airport\textquotesingle{}s code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_a2a95944f568102062d4150d53e1d6371}\label{classMenu_a2a95944f568102062d4150d53e1d6371}} 
+\index{Menu@{Menu}!findbyCountry@{findbyCountry}}
+\index{findbyCountry@{findbyCountry}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{findbyCountry()}{findbyCountry()}}
+{\footnotesize\ttfamily string Menu\+::findby\+Country (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classManager}{Manager}} \&}]{manager }\end{DoxyParamCaption})}
+
+Finds all the airport in a country and allows user choice. Complexity\+: O(n) 
+\begin{DoxyParams}{Parameters}
+{\em manager} & \mbox{\hyperlink{classManager}{Manager}} object with all the information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The user\textquotesingle{}s choice airport code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_a65d994970d7a83150df9cd9f27762bd2}\label{classMenu_a65d994970d7a83150df9cd9f27762bd2}} 
+\index{Menu@{Menu}!findChoiceMenu@{findChoiceMenu}}
+\index{findChoiceMenu@{findChoiceMenu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{findChoiceMenu()}{findChoiceMenu()}}
+{\footnotesize\ttfamily int Menu\+::find\+Choice\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Allows the user to choose how he wants to search for an airport. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_a0a00ff0e1c32757385f5337ac6cfec73}\label{classMenu_a0a00ff0e1c32757385f5337ac6cfec73}} 
+\index{Menu@{Menu}!flightMenu@{flightMenu}}
+\index{flightMenu@{flightMenu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{flightMenu()}{flightMenu()}}
+{\footnotesize\ttfamily int Menu\+::flight\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Allows the user to choose the type of route wanted. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_a5c71c0ae46ece71338c836799495f985}\label{classMenu_a5c71c0ae46ece71338c836799495f985}} 
+\index{Menu@{Menu}!infoChoiceMenu@{infoChoiceMenu}}
+\index{infoChoiceMenu@{infoChoiceMenu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{infoChoiceMenu()}{infoChoiceMenu()}}
+{\footnotesize\ttfamily int Menu\+::info\+Choice\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Allows the user to choose the specific type of information he wants to see. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_af2479c56ab20abe25b90ad64fc092426}\label{classMenu_af2479c56ab20abe25b90ad64fc092426}} 
+\index{Menu@{Menu}!mainMenu@{mainMenu}}
+\index{mainMenu@{mainMenu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{mainMenu()}{mainMenu()}}
+{\footnotesize\ttfamily int Menu\+::main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints the main menu and allows user choice. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_ae19aec628c43c05c33bbf9bdf441e5f3}\label{classMenu_ae19aec628c43c05c33bbf9bdf441e5f3}} 
+\index{Menu@{Menu}!menuController@{menuController}}
+\index{menuController@{menuController}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{menuController()}{menuController()}}
+{\footnotesize\ttfamily void Menu\+::menu\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classManager}{Manager}} \&}]{manager }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classMenu}{Menu}} controller that calls all the other menus and function necessary. Complexity\+: Since it can be run indefinitely and call an infinite amount of functions it\textquotesingle{}s impossible to calculate the worst case scenario. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & \mbox{\hyperlink{classManager}{Manager}} with all the information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMenu_a189923fdcf2bfaad83090e5509934192}\label{classMenu_a189923fdcf2bfaad83090e5509934192}} 
+\index{Menu@{Menu}!networkReportMenu@{networkReportMenu}}
+\index{networkReportMenu@{networkReportMenu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{networkReportMenu()}{networkReportMenu()}}
+{\footnotesize\ttfamily int Menu\+::network\+Report\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Allows the user to choose the type of information about the entire network. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_a74d7594cd137edb509da902020ca6b38}\label{classMenu_a74d7594cd137edb509da902020ca6b38}} 
+\index{Menu@{Menu}!nrFlights@{nrFlights}}
+\index{nrFlights@{nrFlights}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{nrFlights()}{nrFlights()}}
+{\footnotesize\ttfamily int Menu\+::nr\+Flights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Allows the user to choose the number of flights to use in the search. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_ab9f8f511d0dd0eee9c44b10c073d560e}\label{classMenu_ab9f8f511d0dd0eee9c44b10c073d560e}} 
+\index{Menu@{Menu}!subMenu@{subMenu}}
+\index{subMenu@{subMenu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{subMenu()}{subMenu()}}
+{\footnotesize\ttfamily int Menu\+::sub\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Allows the user to choose between globally or locally. \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_adbcfc5ca4892e22e6005d8bd4365c625}\label{classMenu_adbcfc5ca4892e22e6005d8bd4365c625}} 
+\index{Menu@{Menu}!topAirportsMenu@{topAirportsMenu}}
+\index{topAirportsMenu@{topAirportsMenu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{topAirportsMenu()}{topAirportsMenu()}}
+{\footnotesize\ttfamily int Menu\+::top\+Airports\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Allows the user to choose the top-\/k in X he wants to see. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_ad28ebddbbfdf8888aea6c43653a08c70}\label{classMenu_ad28ebddbbfdf8888aea6c43653a08c70}} 
+\index{Menu@{Menu}!typeInfoChoiceMenu@{typeInfoChoiceMenu}}
+\index{typeInfoChoiceMenu@{typeInfoChoiceMenu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{typeInfoChoiceMenu()}{typeInfoChoiceMenu()}}
+{\footnotesize\ttfamily int Menu\+::type\+Info\+Choice\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Allows the user to choose the type of information he wants to see. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+User\textquotesingle{}s choice 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Code/Menu.\+h\item 
+Code/Menu.\+cpp\end{DoxyCompactItemize}

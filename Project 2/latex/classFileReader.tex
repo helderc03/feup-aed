@@ -1,0 +1,72 @@
+\hypertarget{classFileReader}{}\doxysection{File\+Reader Class Reference}
+\label{classFileReader}\index{FileReader@{FileReader}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFileReader_a615dcb2443cad1f2ca123c7c0c334480}{File\+Reader}} ()
+\item 
+airport\+Map \mbox{\hyperlink{classFileReader_a34a75199b006292eaadf34fd5a6e9b38}{read\+Airports\+File}} (std\+::istream \&airport\+File)
+\item 
+airline\+Map \mbox{\hyperlink{classFileReader_ab99249bede06d545ca58252b403ad1ec}{read\+Airlines\+File}} (std\+::istream \&airlines\+File)
+\item 
+void \mbox{\hyperlink{classFileReader_a8a1878b53e9adfbd72dac17c84de7505}{read\+Flight\+File}} (std\+::istream \&flight\+File, \mbox{\hyperlink{classGraph}{Graph}} \&graph)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFileReader_a615dcb2443cad1f2ca123c7c0c334480}\label{classFileReader_a615dcb2443cad1f2ca123c7c0c334480}} 
+\index{FileReader@{FileReader}!FileReader@{FileReader}}
+\index{FileReader@{FileReader}!FileReader@{FileReader}}
+\doxysubsubsection{\texorpdfstring{FileReader()}{FileReader()}}
+{\footnotesize\ttfamily File\+Reader\+::\+File\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor for the \mbox{\hyperlink{classFileReader}{File\+Reader}} class. Complexity\+: O(1) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFileReader_ab99249bede06d545ca58252b403ad1ec}\label{classFileReader_ab99249bede06d545ca58252b403ad1ec}} 
+\index{FileReader@{FileReader}!readAirlinesFile@{readAirlinesFile}}
+\index{readAirlinesFile@{readAirlinesFile}!FileReader@{FileReader}}
+\doxysubsubsection{\texorpdfstring{readAirlinesFile()}{readAirlinesFile()}}
+{\footnotesize\ttfamily airline\+Map File\+Reader\+::read\+Airlines\+File (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{airlines\+File }\end{DoxyParamCaption})}
+
+Reader for the airlines info file. Complexity\+: O(n²) 
+\begin{DoxyParams}{Parameters}
+{\em airlines\+File} & Airlines info file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Map containing all airlines 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFileReader_a34a75199b006292eaadf34fd5a6e9b38}\label{classFileReader_a34a75199b006292eaadf34fd5a6e9b38}} 
+\index{FileReader@{FileReader}!readAirportsFile@{readAirportsFile}}
+\index{readAirportsFile@{readAirportsFile}!FileReader@{FileReader}}
+\doxysubsubsection{\texorpdfstring{readAirportsFile()}{readAirportsFile()}}
+{\footnotesize\ttfamily airport\+Map File\+Reader\+::read\+Airports\+File (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{airport\+File }\end{DoxyParamCaption})}
+
+Reader for the airports info file. Complexity\+: O(n²) 
+\begin{DoxyParams}{Parameters}
+{\em airport\+File} & Airports info file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Map containing all airports 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFileReader_a8a1878b53e9adfbd72dac17c84de7505}\label{classFileReader_a8a1878b53e9adfbd72dac17c84de7505}} 
+\index{FileReader@{FileReader}!readFlightFile@{readFlightFile}}
+\index{readFlightFile@{readFlightFile}!FileReader@{FileReader}}
+\doxysubsubsection{\texorpdfstring{readFlightFile()}{readFlightFile()}}
+{\footnotesize\ttfamily void File\+Reader\+::read\+Flight\+File (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{flight\+File,  }\item[{\mbox{\hyperlink{classGraph}{Graph}} \&}]{graph }\end{DoxyParamCaption})}
+
+Reader for the flights info file. Complexity\+: O(n²) 
+\begin{DoxyParams}{Parameters}
+{\em flight\+File} & Flights info file \\
+\hline
+{\em graph} & \mbox{\hyperlink{classGraph}{Graph}} in which the flights are saved \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Code/File\+Reader.\+h\item 
+Code/File\+Reader.\+cpp\end{DoxyCompactItemize}

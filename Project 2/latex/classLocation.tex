@@ -1,0 +1,117 @@
+\hypertarget{classLocation}{}\doxysection{Location Class Reference}
+\label{classLocation}\index{Location@{Location}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLocation_a064442837da5e610eff182194d3988c7}{Location}} (void)
+\item 
+\mbox{\hyperlink{classLocation_ac5beb0dabd1223c13e7ad18e5de0b4af}{Location}} (std\+::string city, std\+::string country)
+\item 
+\mbox{\hyperlink{classLocation_ad4a3348feb38a9ee8a882f3fe736c7aa}{Location}} (std\+::string country)
+\item 
+void \mbox{\hyperlink{classLocation_a4d7362481dab68c3839b184a0876fb54}{set\+City}} (std\+::string city)
+\item 
+void \mbox{\hyperlink{classLocation_adf16815d04a61c1161a365d153d19853}{set\+Country}} (std\+::string country)
+\item 
+std\+::string \mbox{\hyperlink{classLocation_a29a41f6cc6aa0340321ffd85235cb851}{get\+City}} () const
+\item 
+std\+::string \mbox{\hyperlink{classLocation_a960dad458513baab814dd33cf92923af}{get\+Country}} () const
+\item 
+bool \mbox{\hyperlink{classLocation_ae216dd97b4862f1d2e2ba3f651faaa52}{operator==}} (const \mbox{\hyperlink{classLocation}{Location}} \&city) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLocation_a064442837da5e610eff182194d3988c7}\label{classLocation_a064442837da5e610eff182194d3988c7}} 
+\index{Location@{Location}!Location@{Location}}
+\index{Location@{Location}!Location@{Location}}
+\doxysubsubsection{\texorpdfstring{Location()}{Location()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Location\+::\+Location (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Default constructor for the \mbox{\hyperlink{classLocation}{Location}} class. Complexity\+: O(1) \mbox{\Hypertarget{classLocation_ac5beb0dabd1223c13e7ad18e5de0b4af}\label{classLocation_ac5beb0dabd1223c13e7ad18e5de0b4af}} 
+\index{Location@{Location}!Location@{Location}}
+\index{Location@{Location}!Location@{Location}}
+\doxysubsubsection{\texorpdfstring{Location()}{Location()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Location\+::\+Location (\begin{DoxyParamCaption}\item[{std\+::string}]{city,  }\item[{std\+::string}]{country }\end{DoxyParamCaption})}
+
+Constructor for the \mbox{\hyperlink{classLocation}{Location}} class. Complexity\+: O(1) 
+\begin{DoxyParams}{Parameters}
+{\em city} & \mbox{\hyperlink{classLocation}{Location}}\textquotesingle{}s city \\
+\hline
+{\em country} & \mbox{\hyperlink{classLocation}{Location}}\textquotesingle{}s country \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLocation_ad4a3348feb38a9ee8a882f3fe736c7aa}\label{classLocation_ad4a3348feb38a9ee8a882f3fe736c7aa}} 
+\index{Location@{Location}!Location@{Location}}
+\index{Location@{Location}!Location@{Location}}
+\doxysubsubsection{\texorpdfstring{Location()}{Location()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Location\+::\+Location (\begin{DoxyParamCaption}\item[{std\+::string}]{country }\end{DoxyParamCaption})}
+
+Constructor for the \mbox{\hyperlink{classLocation}{Location}} class. Complexity\+: O(1) 
+\begin{DoxyParams}{Parameters}
+{\em country} & \mbox{\hyperlink{classLocation}{Location}}\textquotesingle{}s country \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLocation_a29a41f6cc6aa0340321ffd85235cb851}\label{classLocation_a29a41f6cc6aa0340321ffd85235cb851}} 
+\index{Location@{Location}!getCity@{getCity}}
+\index{getCity@{getCity}!Location@{Location}}
+\doxysubsubsection{\texorpdfstring{getCity()}{getCity()}}
+{\footnotesize\ttfamily std\+::string Location\+::get\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter for the location\textquotesingle{}s city. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classLocation}{Location}}\textquotesingle{}s city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLocation_a960dad458513baab814dd33cf92923af}\label{classLocation_a960dad458513baab814dd33cf92923af}} 
+\index{Location@{Location}!getCountry@{getCountry}}
+\index{getCountry@{getCountry}!Location@{Location}}
+\doxysubsubsection{\texorpdfstring{getCountry()}{getCountry()}}
+{\footnotesize\ttfamily std\+::string Location\+::get\+Country (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter for the location\textquotesingle{}s country. Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classLocation}{Location}}\textquotesingle{}s country 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLocation_ae216dd97b4862f1d2e2ba3f651faaa52}\label{classLocation_ae216dd97b4862f1d2e2ba3f651faaa52}} 
+\index{Location@{Location}!operator==@{operator==}}
+\index{operator==@{operator==}!Location@{Location}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Location\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLocation}{Location}} \&}]{city }\end{DoxyParamCaption}) const}
+
+Comparator between two cities. 
+\begin{DoxyParams}{Parameters}
+{\em city} & City used in comparator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the cities are the same or false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLocation_a4d7362481dab68c3839b184a0876fb54}\label{classLocation_a4d7362481dab68c3839b184a0876fb54}} 
+\index{Location@{Location}!setCity@{setCity}}
+\index{setCity@{setCity}!Location@{Location}}
+\doxysubsubsection{\texorpdfstring{setCity()}{setCity()}}
+{\footnotesize\ttfamily void Location\+::set\+City (\begin{DoxyParamCaption}\item[{std\+::string}]{city }\end{DoxyParamCaption})}
+
+Setter for the location\textquotesingle{}s city Complexity\+: O(1) 
+\begin{DoxyParams}{Parameters}
+{\em city} & \mbox{\hyperlink{classLocation}{Location}}\textquotesingle{}s city \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLocation_adf16815d04a61c1161a365d153d19853}\label{classLocation_adf16815d04a61c1161a365d153d19853}} 
+\index{Location@{Location}!setCountry@{setCountry}}
+\index{setCountry@{setCountry}!Location@{Location}}
+\doxysubsubsection{\texorpdfstring{setCountry()}{setCountry()}}
+{\footnotesize\ttfamily void Location\+::set\+Country (\begin{DoxyParamCaption}\item[{std\+::string}]{country }\end{DoxyParamCaption})}
+
+Setter for the location\textquotesingle{}s country. Complexity\+: O(1) 
+\begin{DoxyParams}{Parameters}
+{\em country} & \mbox{\hyperlink{classLocation}{Location}}\textquotesingle{}s country \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Code/Location.\+h\item 
+Code/Location.\+cpp\end{DoxyCompactItemize}
